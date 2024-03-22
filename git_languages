@@ -1,0 +1,84 @@
+
+
+
+git init
+
+git branch -M main
+
+git status
+
+git add [filename]
+
+git add .
+
+git restore --staged [filename]
+
+git restore [filename]
+
+git restore --source [commit id]
+
+git commit -m 'command'
+
+git log --oneline --all --graph
+
+# 합치기 
+git merge [branch name]
+
+git branch [branch name]
+
+
+
+# 커밋 된거 제거 
+git revert [commit id]
+
+# 방금 커밋 한거 제거 
+git revert HEAD
+
+# 깃 되돌아가기
+# 헙업에서 사용 안함 
+git reset --hard [commit id]
+
+git reset --soft [commit id]
+
+git reset --mixed [commit id]
+
+
+
+# 원격 저장소에 저장 
+git remote add [변수명] [주소]
+
+# -u: 기억 해라 저장소 경로를 
+git push -u [주소] [branch name]
+
+git push -u [변수명] [branch name]
+
+# 저장되서 생략 가능 
+git push [branch name]
+
+
+
+# 원격저장소에 신규 commit 내용을 내 임시 저장소에 저장
+git fetch
+
+# 원격 저장소 내파일 commit 하기
+git merge
+
+#원격 저장소와 동기화 하기  git fetch + git merge
+git pull [주소] [branch]
+
+
+# 임시 저장
+git stash
+
+git stash list
+
+# save 는 메시지와 같음
+git stash save 'ccc라고 적음'
+
+# 임시 저장된거 가져오기 최근 것으로 부터 
+git stash pop
+
+# 임시 저장된것 삭제 
+git stash drop [번호]
+
+git stash clear
